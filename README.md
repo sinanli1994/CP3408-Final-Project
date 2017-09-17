@@ -8,6 +8,6 @@ Gameplay of **The Cubic Adventure** is simple and easy-to-understand. The **__ob
 
 ## Collaborators and Role
 * @sinanli1994 - Developer
-* @      - Developer
+* @Dylanclf - Developer
 * @wnyao - Developer
 
