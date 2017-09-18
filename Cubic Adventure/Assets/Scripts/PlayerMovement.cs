@@ -23,14 +23,32 @@ public class PlayerMovement: MonoBehaviour {
 		input = new Vector3 (Input.GetAxisRaw ("Horizontal"), 0,Input.GetAxisRaw ("Vertical")); // input
 
 		if (rd.velocity.magnitude < maxSpeed) { //sliding effect 
-			rd.AddForce (input * moveSpeed);	//Add force to the attached rigidbody component
+			rd.AddRelativeForce (input * moveSpeed);	//Add force to the attached rigidbody component
+		}
+
+		if (transform.position.y < -2) { // set up when player falls off the map
+			Die ();
 		}
 	}
 
-	void OnCollisionEnter(Collision other) { //when collide with other
+	void OnCollisionEnter(Collision other) //when collide with other
+	{ 
 		if (other.transform.tag == "Enemy") { 
-			Instantiate (deathParticles, transform.position, Quaternion.identity); //create an instance at the position of player
-			transform.position = spawn;	//return back to the position of spawn point
+			Die ();
 		}
+	}
+
+	void OnTriggerEnter(Collider other) //when player wins for this level
+	{
+		if (other.transform.tag == "Goal")
+		{
+			GameManager.CompleteLevel();
+		}
+	}
+
+	void Die() // called when player is died
+	{
+		Instantiate (deathParticles, transform.position, Quaternion.Euler(270, 0 , 0)); //create an instance at the position of player
+		transform.position = spawn;	//return back to the position of spawn point
 	}
 }
