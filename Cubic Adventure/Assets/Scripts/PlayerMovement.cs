@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement: MonoBehaviour {
 
 	public float moveSpeed; //speed modifier of the player
 	private Vector3 input;
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		input = new Vector3 (Input.GetAxisRaw ("Horizontal"), 0,Input.GetAxisRaw ("Vertical")); //get input
+		input = new Vector3 (Input.GetAxisRaw ("Horizontal"), 0,Input.GetAxisRaw ("Vertical")); // input
 
 		if (rd.velocity.magnitude < maxSpeed) { //sliding effect 
 			rd.AddForce (input * moveSpeed);	//Add force to the attached rigidbody component
