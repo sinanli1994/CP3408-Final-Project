@@ -307,7 +307,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 422f060925264449a9d4cd5d191b6334, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &423607249
+--- !u!1001 &523948337
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -446,7 +446,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 100
   rd: {fileID: 599688100}
-  deathParticles: {fileID: 0}
+  deathParticles: {fileID: 1752420682068558, guid: 8138c1746dfce4a3aa5f8f25de04afd9,
+    type: 2}
 --- !u!54 &599688100
 Rigidbody:
   m_ObjectHideFlags: 0
