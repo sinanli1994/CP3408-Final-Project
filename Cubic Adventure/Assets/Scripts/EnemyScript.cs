@@ -20,12 +20,12 @@ public class EnemyScript : MonoBehaviour {
 		if (transform.position == patrolPoints [currentPoint].position) {
 			currentPoint++;
 
-			if (currentPoint == patrolPoints.Length) {
-				currentPoint = 0;
+			if (currentPoint == patrolPoints.Length) {	
+				currentPoint = 0;	//reset current point to the initial position
 			}
 		}
 			
 
-		transform.position = Vector3.MoveTowards (transform.position, patrolPoints [currentPoint].position, moveSpeed * Time.deltaTime);
+		transform.position = Vector3.MoveTowards (transform.position, patrolPoints [currentPoint].position, moveSpeed * Time.deltaTime); //moving object
 	}
 }
