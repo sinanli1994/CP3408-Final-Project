@@ -7,7 +7,7 @@
 Gameplay of **The Cubic Adventure** is simple and easy-to-understand. The **__objective__** of this game itself requires existing player to navigate a little blue cube to the defined destination while avoiding barriers and any self-moving red cube patrolling near the destination point. The entire interaction between player and the playing object (Blue Cube) is controllable with keypress up, down, left, and right. Player is allowed to adjust the playing object freely upon the landscape. The game will restart once the playing object is beyond the boundary of the landscape or is colliding with the patrolling red cube.
 
 ## Collaborators & Team Role
-* @sinanli1994 - Developer, Designer
-* @Dylanclf - Developer
-* @wnyao - Developer, Designer
+* @sinanli1994 - Developer
+* @Dylanclf - Developer, Designer
+* @wnyao - Developer
 
