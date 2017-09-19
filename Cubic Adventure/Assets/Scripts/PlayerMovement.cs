@@ -11,10 +11,12 @@ public class PlayerMovement: MonoBehaviour {
 
 	private Vector3 spawn;
 	public GameObject deathParticles;
+	public GameManager gameManager;
 
 	// Use this for initialization
 	void Start () {
 		spawn = transform.position; //storing spawn position
+		gameManager = gameManager.GetComponent<GameManager> (); //reference to GameManager
 	}
 	
 	// Update is called once per frame
@@ -42,7 +44,7 @@ public class PlayerMovement: MonoBehaviour {
 	{
 		if (other.transform.tag == "Goal")
 		{
-			GameManager.CompleteLevel();
+			//gameManager.CompleteLevel ();
 		}
 	}
 

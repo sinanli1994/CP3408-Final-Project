@@ -4,13 +4,22 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-	public static int currentScore;
-	public static int highScore;
+	public int currentScore;
+	public int highScore;
 
-	public static int currentLevel = 0;
-	public static int unlockedLevel;
+	public int currentLevel = 0;
+	public int unlockedLevel;
 
-	public static void CompleteLevel() // Handle the loading of next level
+	public GUISkin skin;
+	public float startTime;
+	public float currentTime;
+
+	void Update() { //happen every single frame
+		startTime -= Time.deltaTime;
+
+	}
+
+	public void CompleteLevel() // Handle the loading of next level
 	{
 		if (currentLevel < 2) {
 			currentLevel += 1;
