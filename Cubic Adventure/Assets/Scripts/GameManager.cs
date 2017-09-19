@@ -14,6 +14,11 @@ public class GameManager : MonoBehaviour {
 	public float startTime;
 	public float currentTime;
 
+	void Start()
+	{
+		DontDestroyOnLoad (gameObject);
+	}
+
 	void Update() { //happen every single frame
 		startTime -= Time.deltaTime;
 

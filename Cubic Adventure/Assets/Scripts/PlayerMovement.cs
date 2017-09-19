@@ -20,7 +20,7 @@ public class PlayerMovement: MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		input = new Vector3 (Input.GetAxisRaw ("Horizontal"), 0,Input.GetAxisRaw ("Vertical")); // input
 
@@ -40,11 +40,16 @@ public class PlayerMovement: MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter(Collider other) //when player wins for this level
+	void OnTriggerEnter(Collider other) //handle something triggered
 	{
+		if (other.transform.tag == "Enemy")
+		{
+			Die ();
+		}
+
 		if (other.transform.tag == "Goal")
 		{
-			//gameManager.CompleteLevel ();
+			gameManager.CompleteLevel ();
 		}
 	}
 
