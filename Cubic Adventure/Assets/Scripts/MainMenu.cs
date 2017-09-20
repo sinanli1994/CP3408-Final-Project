@@ -9,15 +9,20 @@ public class MainMenu : MonoBehaviour {
 
 
 	void OnGUI () {
+		int Labelwidth = Screen.width/ 2;
+		int Labelheight = Screen.height/ 2;
+
+		int Buttonwidth = Screen.width / 2;
+		int Buttonheight = Screen.height / 2;
 
 		GUI.skin = skin;
-		GUI.Label (new Rect (180, -50, 300, 300), "The Cubic Adventure");
+		GUI.Label (new Rect (Labelwidth - 400, Labelheight - 500, 800, 800), "The Cubic Adventure");
 
-		if (GUI.Button (new Rect (210, 180, 100, 40), "Play")) {
+		if (GUI.Button (new Rect (Buttonwidth - 110, Buttonheight + 100, 100, 40), "Play")) {
 			SceneManager.LoadScene (1);
 		}
 
-		if (GUI.Button (new Rect (330, 180, 100, 40), "Quit")) {
+		if (GUI.Button (new Rect (Buttonwidth + 10, Buttonheight + 100, 100, 40), "Quit")) {
 			Application.Quit ();
 		}
 	}
