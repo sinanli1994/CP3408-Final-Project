@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour {
 		GUI.Label (new Rect (180, -50, 300, 300), "The Cubic Adventure");
 
 		if (GUI.Button (new Rect (210, 180, 100, 40), "Play")) {
-			SceneManager.LoadScene (0);
+			SceneManager.LoadScene (1);
 		}
 
 		if (GUI.Button (new Rect (330, 180, 100, 40), "Quit")) {

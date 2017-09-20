@@ -16,7 +16,8 @@ public class PlayerMovement: MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		spawn = transform.position; //storing spawn position
-		gameManager = gameManager.GetComponent<GameManager> (); //reference to GameManager
+		gameManager = new GameManager(); //reference to GameManager
+		
 	}
 	
 	// Update is called once per frame

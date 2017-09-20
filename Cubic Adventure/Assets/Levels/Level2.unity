@@ -656,7 +656,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2046533417}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &2046533419
 Behaviour:
   m_ObjectHideFlags: 0
@@ -735,3 +735,6 @@ MonoBehaviour:
   highScore: 0
   currentLevel: 0
   unlockedLevel: 0
+  skin: {fileID: 0}
+  startTime: 0
+  currentTime: 0
