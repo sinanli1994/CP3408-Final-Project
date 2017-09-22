@@ -17,7 +17,6 @@ public class PlayerMovement: MonoBehaviour {
 	void Start () {
 		spawn = transform.position; //storing spawn position
 		gameManager = new GameManager(); //reference to GameManager
-		
 	}
 	
 	// Update is called once per frame
