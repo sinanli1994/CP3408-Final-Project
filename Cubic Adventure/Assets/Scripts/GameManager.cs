@@ -28,11 +28,13 @@ public class GameManager : MonoBehaviour {
 	{
 		currentLevel = SceneManager.GetActiveScene ().buildIndex; //get current running scene index
 
-		if (currentLevel < Application.levelCount) {
+		if (currentLevel >= 0) {
 			currentLevel += 1; //increment to next scene
-			SceneManager.LoadScene (currentLevel);
-		} else {
-			print ("You Win");
-		}
+			if (currentLevel < 4) {
+				SceneManager.LoadScene (currentLevel);
+			} else {
+				print ("You Win");
+			}
+		} 
 	}
 }
