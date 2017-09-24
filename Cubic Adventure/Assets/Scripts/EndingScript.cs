@@ -15,7 +15,7 @@ public class EndingScript : MonoBehaviour {
 		int Buttonheight = Screen.height / 2;
 
 		GUI.skin = skin;
-		GUI.Label (new Rect (Labelwidth - 400, Labelheight - 400, 800, 800), "The End");
+		GUI.Label (new Rect (Labelwidth - 400, Labelheight - 400, 800, 800), "You Win!!!");
 
 		if (GUI.Button (new Rect (Buttonwidth - 50, Buttonheight + 30, 100, 40), "Quit")) {
 			Application.Quit ();
