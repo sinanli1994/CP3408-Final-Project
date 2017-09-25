@@ -938,7 +938,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 40304a4397ed64518931b3cfacfd1733, type: 2}
+      objectReference: {fileID: 2100000, guid: 75a86019a7825429090c418ee91dae91, type: 2}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: patrolPoints.Array.data[2]
@@ -4863,10 +4863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab119f5e7f7343642a8b8df84d10edf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScore: 0
-  highScore: 0
   currentLevel: 0
-  unlockedLevel: 0
   skin: {fileID: 0}
 --- !u!114 &2046533424
 MonoBehaviour:
