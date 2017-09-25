@@ -2285,10 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab119f5e7f7343642a8b8df84d10edf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScore: 0
-  highScore: 0
   currentLevel: 0
-  unlockedLevel: 0
   skin: {fileID: 0}
 --- !u!4 &1146840487
 Transform:
