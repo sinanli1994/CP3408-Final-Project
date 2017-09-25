@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour {
 	public int unlockedLevel;
 
 	public GUISkin skin;
-	public float startTime;
-	public float currentTime;
+	//public float startTime;
+	//public float currentTime;
 
 	void Start()
 	{
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update() { //happen every single frame
-		startTime -= Time.deltaTime;
+		//startTime -= Time.deltaTime;
 
 	}
 
