@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2194,7 +2194,6 @@ GameObject:
   - component: {fileID: 599688100}
   - component: {fileID: 599688099}
   - component: {fileID: 599688102}
-  - component: {fileID: 599688101}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2281,8 +2280,8 @@ MonoBehaviour:
   rd: {fileID: 599688100}
   deathParticles: {fileID: 1752420682068558, guid: 8138c1746dfce4a3aa5f8f25de04afd9,
     type: 2}
-  gameManager: {fileID: 0}
-  deathClip: {fileID: 8300000, guid: 2f6bfbf38e12c44ab8da4d9771d8a9c2, type: 3}
+  gameManager: {fileID: 1146840486}
+  playerAudio: {fileID: 0}
 --- !u!54 &599688100
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2298,13 +2297,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!81 &599688101
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 599688094}
-  m_Enabled: 1
 --- !u!82 &599688102
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4961,7 +4953,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!4 &1514314070 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400004, guid: 62cdac6e5882b4745af2c0066db09978, type: 3}
   m_PrefabInternal: {fileID: 1514314069}
 --- !u!1 &1539366574
 GameObject:
@@ -7117,7 +7109,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!4 &2129976138 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400004, guid: 62cdac6e5882b4745af2c0066db09978, type: 3}
   m_PrefabInternal: {fileID: 2129976137}
 --- !u!1 &2137791642
 GameObject:

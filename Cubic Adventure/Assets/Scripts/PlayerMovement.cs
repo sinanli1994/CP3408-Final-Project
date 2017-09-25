@@ -13,13 +13,11 @@ public class PlayerMovement: MonoBehaviour {
 	public GameObject deathParticles;
 	public GameManager gameManager;
 
-	public AudioClip deathClip;
-	AudioSource playerAudio;
+	public AudioSource playerAudio;
 
 	// Use this for initialization
 	void Start () {
 		spawn = transform.position; //storing spawn position
-		gameManager = new GameManager(); //reference to GameManager
 		playerAudio = GetComponent<AudioSource> ();
 	}
 	
@@ -59,7 +57,6 @@ public class PlayerMovement: MonoBehaviour {
 
 	void Die() // called when player is died
 	{
-		playerAudio.clip = deathClip;
 		playerAudio.Play ();
 
 		Instantiate (deathParticles, transform.position, Quaternion.Euler(270, 0 , 0)); //create an instance at the position of player
