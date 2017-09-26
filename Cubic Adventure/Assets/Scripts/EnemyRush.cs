@@ -33,9 +33,7 @@ public class EnemyRush : MonoBehaviour {
 				currentPoint = 0;
 				moveSpeed = 2;
 			}
-
-			enemy.transform.position = Vector3.MoveTowards (transform.position, rushPoints[currentPoint].position, moveSpeed * Time.deltaTime);
+			enemy.transform.position = Vector4.MoveTowards (transform.position, rushPoints[currentPoint].position, moveSpeed * Time.deltaTime);
 		}
 	}
-
 }

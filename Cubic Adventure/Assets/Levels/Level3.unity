@@ -563,7 +563,7 @@ Prefab:
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
@@ -1071,7 +1071,7 @@ Prefab:
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: moveSpeed
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
@@ -4102,7 +4102,7 @@ Prefab:
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
@@ -4520,7 +4520,7 @@ Prefab:
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
@@ -5210,7 +5210,7 @@ Prefab:
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: moveSpeed
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
@@ -6328,7 +6328,7 @@ Prefab:
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: moveSpeed
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
@@ -6976,7 +6976,7 @@ Prefab:
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
       propertyPath: moveSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114429243803981258, guid: 422f060925264449a9d4cd5d191b6334,
         type: 2}
