@@ -6,7 +6,6 @@ public class EnemyRush : MonoBehaviour {
 
 	public Transform[] rushPoints;	//stores position points that the enemy has to move
 	private int currentPoint;	//current position point of the enemy
-	private float moveSpeed;
 
 	public GameObject enemy;
 	private bool checker;
@@ -26,14 +25,8 @@ public class EnemyRush : MonoBehaviour {
 
 	void Update() {
 		if (checker == true) {
-			currentPoint += 1;
-			moveSpeed = 6;
-
-			if (currentPoint < rushPoints.Length) {
-				currentPoint = 0;
-				moveSpeed = 2;
-			}
-			enemy.transform.position = Vector4.MoveTowards (transform.position, rushPoints[currentPoint].position, moveSpeed * Time.deltaTime);
+			enemy.transform.position = Vector4.MoveTowards (transform.position, rushPoints [currentPoint].position, 0);
 		}
+		checker = false;
 	}
 }
