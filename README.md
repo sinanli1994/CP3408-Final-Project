@@ -13,7 +13,7 @@ Gameplay of **The Cubic Adventure** is simple and easy-to-understand. The **__ob
 ![Sample](https://github.com/sinanli1994/CP3408-Final-Project/blob/master/PreviewImages/endscene.png)
 
 ## Comment 
-This project is developed to kickstart learner interest on game design using Unity; Exploring and learning to create/make games with Unity.
+This project is developed to kickstart learner interest on game design using Unity; Exploring and learning to create or make games with Unity. Thus, lots of imperfections still exist in this project and further development can still be made.
 
 ## Collaborators & Team Role
 * @sinanli1994 - Developer
